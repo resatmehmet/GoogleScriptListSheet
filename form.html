@@ -1,0 +1,38 @@
+<form id="myForm" class="p-2 border border-light rounded bg-light" onsubmit="handleFormSubmit(this)">   
+    <div id="message"></div>
+      <input type="text" id="RecId" name="RecId" value="" style="display: none">
+    <div class="form-row">
+      <div class="form-group col-md-12">
+        <label for="depocikis" >Depodan Çıkış</label>
+        <input type="date" class="form-control" id="depocikis" name="depocikis" placeholder="Depodan Çıkış" required>
+      </div>
+    </div>
+      <div class="form-row">
+     <div class="form-group col-md-6">
+        <label for="exampleFormControlSelect1">Teslim Alan</label>
+        <select class="form-control" id="country" name="country" required>
+          <option selected disabled value="">Teslim Alan</option>
+        </select>
+      </div>
+        <div class="form-group col-md-6" >
+        <label for="date">Tarih</label>
+        <input type="date" class="form-control date" id="date" name="date"  required>
+      </div>
+	  </div> 
+        <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="data1" >Bestellnummer</label>
+        <input type="text" class="form-control" id="data1" name="data1" placeholder="Bestellnummer" required>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="data2" >Netz ID</label>
+        <input type="text" class="form-control" id="data2" name="data2" placeholder="Netz ID" required>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="data3" >STO</label>
+        <input type="text" class="form-control" id="data3" name="data3" placeholder="STO" required>
+      </div>
+    </div>
+	  <button id="btnSubmit" type="submit" class="btn bd-green-500" >Veri kaydet</button>
+    <input class="btn btn-secondary" type="reset" value="Sıfırla">
+</form>
